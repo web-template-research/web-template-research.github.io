@@ -1,0 +1,395 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Beyond Behavior Cloning: Robustness through Interactive Imitation and Contrastive Learning</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1000">
+        <link rel="stylesheet" href="https://use.typekit.net/quv7bsd.css"> <!-- fonts -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body id="body">
+        <div id="main"> 
+            <header id="header">
+            </header>
+            <!-- style="padding-bottom:1em" -->
+            <div id="profile">
+                <!-- <img src="images/profile.jpg"> -->
+                <div id="profile-desc">
+                    <!-- <div id="profile-name"><b>Beyond Behavior Cloning: Robustness through Interactive Imitation and Contrastive Learning</b>
+                        <p><br>under review</p><br>
+                        <p><a href="https://github.com/todo">Code Coming soon(GitHub)</a> &nbsp &nbsp <a href="https://arxiv.org/todo">Paper (arXiv)</a><p>
+                    </div> -->
+                    <div id="profile-name" style="text-align: center; white-space: nowrap; font-size: 200%;">
+                        <b style="line-height: 1.5;">Beyond Behavior Cloning: Robustness through <br> Interactive Imitation and Contrastive Learning</b>
+                        <p><br>Under Review</p>
+                        <br>
+                        <p>
+                            <a href="https://github.com/">Code Coming Soon (GitHub)</a> &nbsp;&nbsp;
+                            <!-- <a href="https://arxiv.org/todo">Paper (arXiv)</a> -->
+                        </p>
+                    </div>
+                    <div class="image" style="text-align: center; margin: 1em 0;">
+                        <img src="images/Fig_3_cover_Figure_3.jpg" alt="Cover Figure" style="max-width: 100%; height: auto;" />
+                    </div>
+
+                    <p>
+                        <b>Abstract</b>. Behavior cloning (BC) traditionally relies on demonstration data, assuming the demonstrated actions are optimal. This can lead to overfitting under noisy data, particularly when expressive models are used (e.g., the energy-based model in Implicit BC). To address this, we extend behavior cloning into an iterative process of optimal action estimation within the Interactive Imitation Learning framework. Specifically, we introduce Contrastive policy Learning from Interactive Corrections (CLIC). CLIC leverages human corrections to estimate a set of desired actions and optimizes the policy to select actions from this set. We provide theoretical guarantees for the convergence of the desired action set to optimal actions in both single and multiple optimal action cases. Extensive simulation and real-robot experiments validate CLIC's advantages over existing state-of-the-art methods, including stable training of energy-based models, robustness to feedback noise, and adaptability to diverse feedback types beyond demonstrations.
+                    </p>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            
+            <!-- Highlight part -->
+            <div class="section paper">
+                <h1 style="margin-bottom: 0px">Highlights</h1>
+                <div class="section recent-work">
+                    <div class="highlight-proj">
+                        <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
+                            <source src="images/video_CLIC_iteratively_converge.mp4" type="video/mp4">
+                        </video>
+                        <p style="font-size: 16px; margin-top: 0px; margin-left: 0px">The iterative process of CLIC involves shrinking the desired action space (gray) while updating the EBM accordingly.</p>
+                    </div>
+                    <div class="highlight-proj2in3">
+                        <div class="image" style="text-align: center; margin-top: 1em 0;">
+                            <img src="images/CLIC_reduces_to_IBC2.png" alt="" style="height: 240px; width: auto;margin-left: -10px; margin-bottom:0 " />
+                        </div>
+                        <p style="font-size: 16px; margin-top: 0px; margin-left: 0px">CLIC with circular desired action spaces reduces to Implicit BC when the raduis going to zero, and the policy-weighted loss is replaced by a uniform Bayes loss.</p>
+                    </div>
+                </div>
+                <div class="section recent-work">
+                    <div class="highlight-proj">
+                        <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
+                            <source src="images/ball_catching_highligh.mp4" type="video/mp4">
+                        </video>
+                        <p style="font-size: 16px; margin-left: 0px">Ball catching: Quick coordination with <br>partial feedback to the end effector <br>or the robot hand.</p>
+                    </div>
+                    <div class="highlight-proj">
+                        <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
+                            <source src="images/water-pouring_hightlight.mp4" type="video/mp4">
+                        </video>
+                        <p style="font-size: 16px; margin-left: 0px">Water pouring: Learning full pose <br>control to precisely pour <br>liquid (marbles) into a bowl.</p>
+                    </div>
+                    <div class="highlight-proj">
+                        <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
+                            <source src="images/InsertT-highlight.mp4" type="video/mp4">
+                        </video>
+                        <p style="font-size: 16px; margin-left: 0px">Insert-T: Learning long-horizon multi-<br> modal task that inserts the T-shape <br>object into the U-shape object.</p>
+                    </div>
+                </div>
+            </div>
+                <div class="divider"></div>
+                <br>
+
+            <!-- Paper link part, could be removed for now, but can be added when get accepted -->
+            <!-- <div class="section paper">
+                <h1>Paper</h1>
+                <p>Latest version (Sep 1, 2021): <a href="https://arxiv.org/abs/2109.00137">arXiv:2109.00137 [cs.RO]</a>.<br>Published at the Conference on Robot Learning (CoRL) 2021<br>
+                <p style="text-align:center"><br> 
+                <a href="https://arxiv.org/pdf/2109.00137.pdf"><img style="width:500px" src="images/tiled_paper_small.jpg"></a>
+                </p>
+            </div>
+            <div class="divider"></div> -->
+
+            <!-- simulation results -->
+            <div class="section paper">
+                <h1>Simulation benchmarks</h1>
+                <p>Our CLIC method outperforms prior state-of-the-art on 4 tasks, where we consider various feedback types for each task. Examples of the trajectory rollout of CLIC method (after training) using accurate demonstration are shown in the video below:</p><br>
+
+                
+                <video height="auto" width="100%" playsinline="" muted="" autoplay="" loop="">
+                    <source src="images/CLIC_simulation_compressed.mp4" type="video/mp4">
+                </video>
+                <!-- <p style="font-size: 16px; text-align:center">Implicit BC policy on a precise, 1-millimeter-tolerance <br>slide-then-insert task: push a block across a table, then slide it into a slot.</p><br> -->
+
+                <!-- <p>Below is a representative comparison on this insertion task:</p><br> -->
+            </div>
+            
+            <!-- Highlight part -->
+            <div class="section paper">
+                <h1 style="margin-bottom: 0px">Real World Insert-T Task</h1>
+                <p>The Insert-T task requires the robot to insert a T-shaped object into a U-shaped object by pushing. We categorize the task into three difficulty levels, and examples of the post-training policy rollouts for each level are shown below:</p><br>
+                <h2 style="margin-bottom: 0px">Insert-T 'Easy' category:</h2> 
+                <!-- <p style="font-size: 20px; margin-left: 0px"><b> Insert-T 'Easy' category: <b></p> -->
+                <div class="section recent-work">
+                    <div class="highlight-proj">
+                        <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="", style="margin-top: 0px;">
+                            <source src="images/InsertT_easy_1.mp4" type="video/mp4">
+                        </video>
+                        <!-- <p style="font-size: 16px; margin-left: 0px">Precise cloning of <br> switching behaviors. <br> (shown: "2D Particle" task)</p> -->
+                    </div>
+                    <div class="highlight-proj">
+                        <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="", style="margin-top: 0px;">
+                            <source src="images/InsertT_easy_2.mp4" type="video/mp4">
+                        </video>
+                        <!-- <p style="font-size: 16px; margin-left: 0px">State-of-the art results on D4RL human-expert tasks. <br> (shown: "door-human-v0" task)</p> -->
+                    </div>
+                    <div class="highlight-proj">
+                        <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="", style="margin-top: 0px;">
+                            <source src="images/InsertT_easy_3.mp4" type="video/mp4">
+                        </video>
+                        <!-- <p style="font-size: 16px; margin-left: 0px">Works with high-dimensional observations and inputs. <br> (shown: "Bi-Manual Sweeping")</p> -->
+                    </div>
+                </div>
+                <h2 style="margin-bottom: 0px">Insert-T 'Medium' category:</h2> 
+                <!-- <p style="font-size: 20px; margin-left: 0px"><b> Insert-T 'Medium' category: <b></p> -->
+                <div class="section recent-work">
+                    <div class="highlight-proj">
+                        <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="", style="margin-top: 0px;">
+                            <source src="images/InsertT_medium_1.mp4" type="video/mp4">
+                        </video>
+                        <!-- <p style="font-size: 16px; margin-left: 0px">Precise cloning of <br> switching behaviors. <br> (shown: "2D Particle" task)</p> -->
+                    </div>
+                    <div class="highlight-proj">
+                        <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="", style="margin-top: 0px;">
+                            <source src="images/InsertT_medium_2.mp4" type="video/mp4">
+                        </video>
+                        <!-- <p style="font-size: 16px; margin-left: 0px">State-of-the art results on D4RL human-expert tasks. <br> (shown: "door-human-v0" task)</p> -->
+                    </div>
+                    <div class="highlight-proj">
+                        <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="", style="margin-top: 0px;">
+                            <source src="images/InsertT_medium_3.mp4" type="video/mp4">
+                        </video>
+                        <!-- <p style="font-size: 16px; margin-left: 0px">Works with high-dimensional observations and inputs. <br> (shown: "Bi-Manual Sweeping")</p> -->
+                    </div>
+                </div>
+                <h2 style="margin-bottom: 0px">Insert-T 'Hard' category:</h2> 
+                <!-- <p style="font-size: 20px; margin-left: 0px"><b> Insert-T 'Medium' category: <b></p> -->
+                <div class="section recent-work">
+                    <div class="highlight-proj">
+                        <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="", style="margin-top: 0px;">
+                            <source src="images/InsertT_hard_1.mp4" type="video/mp4">
+                        </video>
+                        <!-- <p style="font-size: 16px; margin-left: 0px">Precise cloning of <br> switching behaviors. <br> (shown: "2D Particle" task)</p> -->
+                    </div>
+                    <div class="highlight-proj">
+                        <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="", style="margin-top: 0px;">
+                            <source src="images/InsertT_hard_2.mp4" type="video/mp4">
+                        </video>
+                        <!-- <p style="font-size: 16px; margin-left: 0px">State-of-the art results on D4RL human-expert tasks. <br> (shown: "door-human-v0" task)</p> -->
+                    </div>
+                    <div class="highlight-proj">
+                        <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="", style="margin-top: 0px;">
+                            <source src="images/InsertT_hard_3.mp4" type="video/mp4">
+                        </video>
+                        <!-- <p style="font-size: 16px; margin-left: 0px">Works with high-dimensional observations and inputs. <br> (shown: "Bi-Manual Sweeping")</p> -->
+                    </div>
+                </div>
+            </div>
+                <div class="divider"></div>
+                <br>
+
+            
+
+
+            <!-- <div class="section recent-work">
+
+                <div class="highlight-proj2by">
+                    <video height="360" width="100%" playsinline="" muted="" autoplay="" loop="">
+                        <source src="images/ebm_sort_crop.mp4" type="video/mp4">
+                    </video>
+                    <p style="font-size: 16px">Implicit BC (ours)</p>
+                </div>
+                <div class="highlight-proj2by">
+                    <video height="360" width="100%" playsinline="" muted="" autoplay="" loop="">
+                        <source src="images/mse_sort_crop.mp4" type="video/mp4">
+                    </video>
+                    <p style="font-size: 16px">Explicit BC (baseline)</p>
+                </div>
+                
+            </div>
+
+            <div class="section paper">
+            <p>Below are several additional comparisons on various simulated tasks.  See the paper for more analysis and interpretation
+                on the different aspects highlighted by these comparisons.</p><br>
+            </div>
+
+
+            <div class="divider"></div>
+            <br> -->
+
+
+
+ 
+            <!-- <div class="section paper">
+                <p><b>"Particle" Task</b>: agent (black dot) should move to the green dot, then the blue dot.</p><br>
+            </div>           
+            <div class="section recent-work">
+
+                <div class="highlight-proj2by">
+                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
+                        <source src="images/particle_langevin_H264.mp4" type="video/mp4">
+                    </video>
+                    <p style="font-size: 16px">Implicit BC (ours)</p>
+                </div>
+                <div class="highlight-proj2by">
+                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
+                        <source src="images/particle_mse_H264.mp4" type="video/mp4">
+                    </video>
+                    <p style="font-size: 16px">Explicit BC (baseline)</p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <br> -->
+
+
+            <!-- <div class="section paper">
+            <p><b>"Planar Sweeping" Task</b>: agent (stick) should sweep all particles into the target region.</p><br>
+            </div>
+            <div class="section recent-work">
+                
+
+                <div class="highlight-proj2by">
+                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
+                        <source src="images/pymunk-sweeping-ebm-best.mp4" type="video/mp4">
+                    </video>
+                    <p style="font-size: 16px">Implicit BC (ours)</p>
+                </div>
+                <div class="highlight-proj2by">
+                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
+                        <source src="images/pymunk-sweeping-mse-best.mp4" type="video/mp4">
+                    </video>
+                    <p style="font-size: 16px">Explicit BC (baseline)</p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <br> -->
+
+           
+
+            <!-- <div class="section paper">
+                <h1>Generalization, Discontinuities, and Multimodality</h1>
+                <p>We highlight in particular three properties of implicit models vs. their explicit counterparts.<p><br>
+
+                <p>For <b>generalization</b>, implicit models empirically show intriguingly different generalization properties compared to explicit counterparts, which in certain cases can be advantageous, for example in this coordinate regression task:
+
+                <p style="text-align:center"><br> 
+                <img style="width:600px" src="images/coord_reg.png">
+                </p>
+                <p style="font-size: 16px; text-align:center">In a canonical coordinate regression task, implicit models generalize well from just a few examples (shown above is 10 training examples), whereas explicit models struggle. (See Paper for more details).</p><br>
+
+                <p>For <b>discontinuities</b>, the following animation illustrates training an implicit (top) vs. explicit (bottom) model
+                on a simple <a href="https://en.wikipedia.org/wiki/Heaviside_step_function">Heaviside step function</a>.</p>
+
+                
+                <video height="360" width="100%" playsinline="" muted="" autoplay="" loop="">
+                    <source src="images/ebm_step_fit.mp4" type="video/mp4">
+                </video>
+                <p style="font-size: 16px; text-align:center">(above) Implicit MLP trained as an EBM.</p>
+
+                
+                <video height="360" width="100%" playsinline="" muted="" autoplay="" loop="">
+                    <source src="images/mse_step_fit.mp4" type="video/mp4">
+                </video>
+                <p style="font-size: 16px; text-align:center">(above) Explicit MLP trained with Mean Square Error.</p><br>
+
+                <p>For approximating <b>multi-valued functions and/or conditional multi-modal distributions</b>, implicit models benefit from unconstrained flexibility.</p><br>
+
+                <p style="text-align:center"><br> 
+                <img style="width:800px" src="images/multi-valued.png">
+                </p>
+                <p style="font-size: 16px; text-align:center">Comparison of implicit (top) fitting of multi-valued functions compared to an example explicit model (bottom), using mixture-of-gaussian regression ("Mixture Density Network").</p><br>
+
+
+
+
+            </div> -->
+            <!-- <br>
+            <br>
+            <div class="divider"></div> -->
+
+
+            <!-- <div class="section paper half">
+                <h1>Code</h1>
+                <p>
+                    <a href="https://github.com/google-research/ibc">Code is available on Github!</a> Includes:<br>
+                    <p style="font-size: 16px">
+                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;Simulation environments: Particle, Simulated Robot, D4RL tasks.<br>
+                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;Downloadable data for tasks.<br>
+                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;IBC implementation (Langevin and DFO).<br>
+                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;MSE and MDN baselines.<br>
+                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;Configurations for trainings.<br>
+                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;10-minute Quickstart.<br>
+                   
+                </p>
+                </p> -->
+
+            <!-- </div>
+            <div class="section bibtex half">
+                <h1>Bibtex</h1>
+                <div class="code">@article{florence2021implicit,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;title={Implicit Behavioral Cloning},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;author={Florence, Pete and Lynch, Corey and Zeng, Andy and Ramirez, Oscar and Wahid, Ayzaan and Downs, Laura and Wong, Adrian and Lee, Johnny and Mordatch, Igor and Tompson, Jonathan},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;journal={Conference on Robot Learning (CoRL)},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;year={2021}<br>
+}</div>
+            </div>
+            <br>
+            <div class="divider"></div>
+            <br>
+             -->
+
+
+            <div class="section team">
+                <h1>Team</h1>
+                <p>Omited for anonymous review.</p><br>
+                <!-- <div class="people-profile">
+                    <a href="http://www.peteflorence.com/"><img src="images/people/pete.jpg"><p>Pete Florence</p></a>
+                </div>
+                <div class="people-profile">
+                    <a href="https://coreylynch.github.io/"><img src="images/people/corey.jpg"><p>Corey Lynch</p></a>
+                </div>
+                <div class="people-profile">
+                    <a href="https://andyzeng.github.io/"><img src="images/people/andy.jpg"><p>Andy Zeng</p></a>
+                </div>
+                <div class="people-profile">
+                    <a href="https://www.linkedin.com/in/oscar-ramirez-905913b9"><img src="images/people/oscar.jpg"><p>Oscar Ramirez</p></a>
+                </div>
+                <div class="people-profile">
+                    <a href="https://ayzaan.com/"><img src="images/people/ayzaan.jpg"><p>Ayzaan Wahid</p></a>
+                </div>
+                <div class="people-profile">
+                    <a href="https://www.linkedin.com/in/laura-downs-4935081"><img src="images/people/laura.jpg"><p>Laura Downs</p></a>
+                </div>
+                <div class="people-profile">
+                    <a href="https://almostsquare.com/"><img src="images/people/adrian.png"><p>Adrian Wong</p></a>
+                </div>
+                <div class="people-profile">
+                    <a href="http://johnnylee.net/"><img src="images/people/johnny.png"><p>Johnny Lee</p></a>
+                </div>
+                <div class="people-profile">
+                    <a href="https://twitter.com/imordatch"><img src="images/people/igor.jpg"><p>Igor Mordatch</p></a>
+                </div>
+                <div class="people-profile">
+                    <a href="https://jonathantompson.github.io/"><img src="images/people/jonathan_tompson.jpeg"><p>Jonathan Tompson</p></a>
+                </div>
+                 -->
+                <div style="clear: both;"></div>
+            </div>
+            <!-- <div class="section teamlogo">
+                <img src="images/logo.png">
+                <p>Robotics at Google</p>
+            </div> -->
+            <div style="clear: both;"></div>
+            <div class="divider"></div>
+            
+<!--             <div class="section highlights">
+                <h1>Highlights</h1>
+                <a href="https://ai.googleblog.com/2021/02/rearranging-visual-world.html"><img style="height: 80px; margin-left: 30px; margin-bottom: 10px" src="images/aiblog.png"></a>
+                <a href="https://venturebeat.com/2020/10/28/googles-transporter-networks-learn-to-stack-blocks-and-assemble-mouthwash-kits-from-as-few-examples/"><img style="height: 26px; margin-top: 31px; margin-left: 30px; margin-bottom: 10px" src="images/vb.png"></a>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="divider"></div> -->
+            
+            
+            
+            <div class="divider"></div>
+            
+            <div class="section acknowledgements">
+                <h1>Acknowledgements</h1>
+                <p>Omited for anonymous review.</p><br><br>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br>
+            <div class="divider"></div>
+        </div>
+    </body>
+</html>
