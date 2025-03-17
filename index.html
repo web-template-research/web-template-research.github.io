@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Beyond Behavior Cloning: Robustness through Interactive Imitation and Contrastive Learning</title>
+        <!--## Enter your webpage's title here -->
+        <title>Your webpage title here</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=1000">
         <link rel="stylesheet" href="https://use.typekit.net/quv7bsd.css"> <!-- fonts -->
@@ -11,27 +12,25 @@
         <div id="main"> 
             <header id="header">
             </header>
-            <!-- style="padding-bottom:1em" -->
             <div id="profile">
-                <!-- <img src="images/profile.jpg"> -->
                 <div id="profile-desc">
-                    <!-- <div id="profile-name"><b>Beyond Behavior Cloning: Robustness through Interactive Imitation and Contrastive Learning</b>
-                        <p><br>under review</p><br>
-                        <p><a href="https://github.com/todo">Code Coming soon(GitHub)</a> &nbsp &nbsp <a href="https://arxiv.org/todo">Paper (arXiv)</a><p>
-                    </div> -->
                     <div id="profile-name" style="text-align: center; white-space: nowrap; font-size: 200%;">
-                        <b style="line-height: 1.5;">Beyond Behavior Cloning: Robustness through <br> Interactive Imitation and Contrastive Learning</b>
+                        <!--## Enter your paper's title here, br can used to change the line, you can also modify the 'style' command to change the font types or size -->
+                        <b style="line-height: 1.5;">This is a webpage template for research projects: <br> Enter your paper's title here </b>
                         <p><br>Under Review</p>
                         <br>
                         <p>
+                            <!--## Enter other information of your paper here, such as codes, paper link, etc. -->
                             <a href="https://github.com/">Code Coming Soon (GitHub)</a> &nbsp;&nbsp;
-                            <!-- <a href="https://arxiv.org/todo">Paper (arXiv)</a> -->
+                            <a href="https://arxiv.org/">Paper (arXiv)</a>
                         </p>
                     </div>
+                     <!--## Enter a cover figure of the paper -->
                     <div class="image" style="text-align: center; margin: 1em 0;">
                         <img src="images/Fig_3_cover_Figure_3.jpg" alt="Cover Figure" style="max-width: 100%; height: auto;" />
                     </div>
-
+                    
+                    <!--## Enter the abstract of the paper -->
                     <p>
                         <b>Abstract</b>. Behavior cloning (BC) traditionally relies on demonstration data, assuming the demonstrated actions are optimal. This can lead to overfitting under noisy data, particularly when expressive models are used (e.g., the energy-based model in Implicit BC). To address this, we extend behavior cloning into an iterative process of optimal action estimation within the Interactive Imitation Learning framework. Specifically, we introduce Contrastive policy Learning from Interactive Corrections (CLIC). CLIC leverages human corrections to estimate a set of desired actions and optimizes the policy to select actions from this set. We provide theoretical guarantees for the convergence of the desired action set to optimal actions in both single and multiple optimal action cases. Extensive simulation and real-robot experiments validate CLIC's advantages over existing state-of-the-art methods, including stable training of energy-based models, robustness to feedback noise, and adaptability to diverse feedback types beyond demonstrations.
                     </p>
@@ -41,21 +40,33 @@
             
             <!-- Highlight part -->
             <div class="section paper">
+                <!-- Define the headline using the template h1 -->
                 <h1 style="margin-bottom: 0px">Highlights</h1>
+
+                <!-- Display one video and one figures in one row -->
                 <div class="section recent-work">
+                    <!-- Define one video, change the source to your own video with a correct path.
+                        You can adjust the height and width of this video.-->
                     <div class="highlight-proj">
                         <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
                             <source src="images/video_CLIC_iteratively_converge.mp4" type="video/mp4">
                         </video>
-                        <p style="font-size: 16px; margin-top: 0px; margin-left: 0px">The iterative process of CLIC involves shrinking the desired action space (gray) while updating the EBM accordingly.</p>
+                        <!-- Here defines the footnotes/captions of the above video.-->
+                        <p style="font-size: 16px; margin-top: 0px; margin-left: 0px">Change the video and its corresponding caption.</p>
                     </div>
+                    <!-- Here defines a figure, its size follows the class 'highlight-proj2in3' in style.css file.-->
                     <div class="highlight-proj2in3">
+                        <!-- Adjust the sources and captions accordingly. 
+                            Feel free to change the size of the figure.
+                            If you don't need a figure here, just simply remove this section, starting from <div class="section recent-work"> to its corresponding </div>.-->
                         <div class="image" style="text-align: center; margin-top: 1em 0;">
                             <img src="images/CLIC_reduces_to_IBC2.png" alt="" style="height: 240px; width: auto;margin-left: -10px; margin-bottom:0 " />
                         </div>
-                        <p style="font-size: 16px; margin-top: 0px; margin-left: 0px">CLIC with circular desired action spaces reduces to Implicit BC when the raduis going to zero, and the policy-weighted loss is replaced by a uniform Bayes loss.</p>
+                        <p style="font-size: 16px; margin-top: 0px; margin-left: 0px">Change the figure and its corresponding caption.</p>
                     </div>
                 </div>
+                
+                <!-- Display three videos in one row-->
                 <div class="section recent-work">
                     <div class="highlight-proj">
                         <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
@@ -76,19 +87,18 @@
                         <p style="font-size: 16px; margin-left: 0px">Insert-T: Learning long-horizon multi-<br> modal task that inserts the T-shape <br>object into the U-shape object.</p>
                     </div>
                 </div>
-            </div>
-                <div class="divider"></div>
-                <br>
 
-            <!-- Paper link part, could be removed for now, but can be added when get accepted -->
-            <!-- <div class="section paper">
-                <h1>Paper</h1>
-                <p>Latest version (Sep 1, 2021): <a href="https://arxiv.org/abs/2109.00137">arXiv:2109.00137 [cs.RO]</a>.<br>Published at the Conference on Robot Learning (CoRL) 2021<br>
-                <p style="text-align:center"><br> 
-                <a href="https://arxiv.org/pdf/2109.00137.pdf"><img style="width:500px" src="images/tiled_paper_small.jpg"></a>
-                </p>
+                <!--## You can add more video highlights below, just remove this if you don't need it. -->
+                <div class="section recent-work">
+                    <!--## Highlight individual task videos and clearly label each task -->
+                    <p>You can add more video highlights, and you can also adjust the layout of these videos.</p><br>
+                </div>
             </div>
-            <div class="divider"></div> -->
+            
+
+            <div class="divider"></div>
+            <br>
+
 
             <!-- simulation results -->
             <div class="section paper">
@@ -181,122 +191,6 @@
             
 
 
-            <!-- <div class="section recent-work">
-
-                <div class="highlight-proj2by">
-                    <video height="360" width="100%" playsinline="" muted="" autoplay="" loop="">
-                        <source src="images/ebm_sort_crop.mp4" type="video/mp4">
-                    </video>
-                    <p style="font-size: 16px">Implicit BC (ours)</p>
-                </div>
-                <div class="highlight-proj2by">
-                    <video height="360" width="100%" playsinline="" muted="" autoplay="" loop="">
-                        <source src="images/mse_sort_crop.mp4" type="video/mp4">
-                    </video>
-                    <p style="font-size: 16px">Explicit BC (baseline)</p>
-                </div>
-                
-            </div>
-
-            <div class="section paper">
-            <p>Below are several additional comparisons on various simulated tasks.  See the paper for more analysis and interpretation
-                on the different aspects highlighted by these comparisons.</p><br>
-            </div>
-
-
-            <div class="divider"></div>
-            <br> -->
-
-
-
- 
-            <!-- <div class="section paper">
-                <p><b>"Particle" Task</b>: agent (black dot) should move to the green dot, then the blue dot.</p><br>
-            </div>           
-            <div class="section recent-work">
-
-                <div class="highlight-proj2by">
-                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
-                        <source src="images/particle_langevin_H264.mp4" type="video/mp4">
-                    </video>
-                    <p style="font-size: 16px">Implicit BC (ours)</p>
-                </div>
-                <div class="highlight-proj2by">
-                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
-                        <source src="images/particle_mse_H264.mp4" type="video/mp4">
-                    </video>
-                    <p style="font-size: 16px">Explicit BC (baseline)</p>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <br> -->
-
-
-            <!-- <div class="section paper">
-            <p><b>"Planar Sweeping" Task</b>: agent (stick) should sweep all particles into the target region.</p><br>
-            </div>
-            <div class="section recent-work">
-                
-
-                <div class="highlight-proj2by">
-                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
-                        <source src="images/pymunk-sweeping-ebm-best.mp4" type="video/mp4">
-                    </video>
-                    <p style="font-size: 16px">Implicit BC (ours)</p>
-                </div>
-                <div class="highlight-proj2by">
-                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
-                        <source src="images/pymunk-sweeping-mse-best.mp4" type="video/mp4">
-                    </video>
-                    <p style="font-size: 16px">Explicit BC (baseline)</p>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <br> -->
-
-           
-
-            <!-- <div class="section paper">
-                <h1>Generalization, Discontinuities, and Multimodality</h1>
-                <p>We highlight in particular three properties of implicit models vs. their explicit counterparts.<p><br>
-
-                <p>For <b>generalization</b>, implicit models empirically show intriguingly different generalization properties compared to explicit counterparts, which in certain cases can be advantageous, for example in this coordinate regression task:
-
-                <p style="text-align:center"><br> 
-                <img style="width:600px" src="images/coord_reg.png">
-                </p>
-                <p style="font-size: 16px; text-align:center">In a canonical coordinate regression task, implicit models generalize well from just a few examples (shown above is 10 training examples), whereas explicit models struggle. (See Paper for more details).</p><br>
-
-                <p>For <b>discontinuities</b>, the following animation illustrates training an implicit (top) vs. explicit (bottom) model
-                on a simple <a href="https://en.wikipedia.org/wiki/Heaviside_step_function">Heaviside step function</a>.</p>
-
-                
-                <video height="360" width="100%" playsinline="" muted="" autoplay="" loop="">
-                    <source src="images/ebm_step_fit.mp4" type="video/mp4">
-                </video>
-                <p style="font-size: 16px; text-align:center">(above) Implicit MLP trained as an EBM.</p>
-
-                
-                <video height="360" width="100%" playsinline="" muted="" autoplay="" loop="">
-                    <source src="images/mse_step_fit.mp4" type="video/mp4">
-                </video>
-                <p style="font-size: 16px; text-align:center">(above) Explicit MLP trained with Mean Square Error.</p><br>
-
-                <p>For approximating <b>multi-valued functions and/or conditional multi-modal distributions</b>, implicit models benefit from unconstrained flexibility.</p><br>
-
-                <p style="text-align:center"><br> 
-                <img style="width:800px" src="images/multi-valued.png">
-                </p>
-                <p style="font-size: 16px; text-align:center">Comparison of implicit (top) fitting of multi-valued functions compared to an example explicit model (bottom), using mixture-of-gaussian regression ("Mixture Density Network").</p><br>
-
-
-
-
-            </div> -->
-            <!-- <br>
-            <br>
-            <div class="divider"></div> -->
-
 
             <!-- <div class="section paper half">
                 <h1>Code</h1>
@@ -372,13 +266,6 @@
             <div style="clear: both;"></div>
             <div class="divider"></div>
             
-<!--             <div class="section highlights">
-                <h1>Highlights</h1>
-                <a href="https://ai.googleblog.com/2021/02/rearranging-visual-world.html"><img style="height: 80px; margin-left: 30px; margin-bottom: 10px" src="images/aiblog.png"></a>
-                <a href="https://venturebeat.com/2020/10/28/googles-transporter-networks-learn-to-stack-blocks-and-assemble-mouthwash-kits-from-as-few-examples/"><img style="height: 26px; margin-top: 31px; margin-left: 30px; margin-bottom: 10px" src="images/vb.png"></a>
-            </div>
-            <div style="clear: both;"></div>
-            <div class="divider"></div> -->
             
             
             
