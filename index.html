@@ -102,24 +102,31 @@
 
             <!-- simulation results -->
             <div class="section paper">
+                <!-- Define the headline using the template h1
+                    Feel free to adjust the title of this section based on the structure of your paper. -->
                 <h1>Simulation benchmarks</h1>
+                <!-- Add text explanations, please change to your own. -->
                 <p>Our CLIC method outperforms prior state-of-the-art on 4 tasks, where we consider various feedback types for each task. Examples of the trajectory rollout of CLIC method (after training) using accurate demonstration are shown in the video below:</p><br>
 
-                
+                <!-- Insert a video here. -->
                 <video height="auto" width="100%" playsinline="" muted="" autoplay="" loop="">
                     <source src="images/CLIC_simulation_compressed.mp4" type="video/mp4">
                 </video>
-                <!-- <p style="font-size: 16px; text-align:center">Implicit BC policy on a precise, 1-millimeter-tolerance <br>slide-then-insert task: push a block across a table, then slide it into a slot.</p><br> -->
-
-                <!-- <p>Below is a representative comparison on this insertion task:</p><br> -->
             </div>
             
-            <!-- Highlight part -->
+            <!-- Real-world experiment results -->
             <div class="section paper">
+                <!-- Define the headline using the template h1
+                    Feel free to adjust the title of this section based on the structure of your paper. -->
                 <h1 style="margin-bottom: 0px">Real World Insert-T Task</h1>
                 <p>The Insert-T task requires the robot to insert a T-shaped object into a U-shaped object by pushing. We categorize the task into three difficulty levels, and examples of the post-training policy rollouts for each level are shown below:</p><br>
+                
+                <!-- Define the headline using the template h2 (smaller font then h1, both defined in style.css) -->
                 <h2 style="margin-bottom: 0px">Insert-T 'Easy' category:</h2> 
                 <!-- <p style="font-size: 20px; margin-left: 0px"><b> Insert-T 'Easy' category: <b></p> -->
+
+                <!-- Show three videos in one row, following the same template as in the above highlight section. 
+                    Feel free to remove or adjust the structure.-->
                 <div class="section recent-work">
                     <div class="highlight-proj">
                         <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="", style="margin-top: 0px;">
@@ -140,8 +147,12 @@
                         <!-- <p style="font-size: 16px; margin-left: 0px">Works with high-dimensional observations and inputs. <br> (shown: "Bi-Manual Sweeping")</p> -->
                     </div>
                 </div>
+
+                <!-- Define the headline using the template h2 -->
                 <h2 style="margin-bottom: 0px">Insert-T 'Medium' category:</h2> 
                 <!-- <p style="font-size: 20px; margin-left: 0px"><b> Insert-T 'Medium' category: <b></p> -->
+
+                <!-- Show three videos in one row, following the same template as in the above highlight section. -->
                 <div class="section recent-work">
                     <div class="highlight-proj">
                         <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="", style="margin-top: 0px;">
@@ -162,6 +173,8 @@
                         <!-- <p style="font-size: 16px; margin-left: 0px">Works with high-dimensional observations and inputs. <br> (shown: "Bi-Manual Sweeping")</p> -->
                     </div>
                 </div>
+
+                <!-- Define the headline using the template h2 -->
                 <h2 style="margin-bottom: 0px">Insert-T 'Hard' category:</h2> 
                 <!-- <p style="font-size: 20px; margin-left: 0px"><b> Insert-T 'Medium' category: <b></p> -->
                 <div class="section recent-work">
@@ -192,77 +205,12 @@
 
 
 
-            <!-- <div class="section paper half">
-                <h1>Code</h1>
-                <p>
-                    <a href="https://github.com/google-research/ibc">Code is available on Github!</a> Includes:<br>
-                    <p style="font-size: 16px">
-                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;Simulation environments: Particle, Simulated Robot, D4RL tasks.<br>
-                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;Downloadable data for tasks.<br>
-                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;IBC implementation (Langevin and DFO).<br>
-                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;MSE and MDN baselines.<br>
-                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;Configurations for trainings.<br>
-                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;10-minute Quickstart.<br>
-                   
-                </p>
-                </p> -->
-
-            <!-- </div>
-            <div class="section bibtex half">
-                <h1>Bibtex</h1>
-                <div class="code">@article{florence2021implicit,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;title={Implicit Behavioral Cloning},<br>
-&nbsp;&nbsp;&nbsp;&nbsp;author={Florence, Pete and Lynch, Corey and Zeng, Andy and Ramirez, Oscar and Wahid, Ayzaan and Downs, Laura and Wong, Adrian and Lee, Johnny and Mordatch, Igor and Tompson, Jonathan},<br>
-&nbsp;&nbsp;&nbsp;&nbsp;journal={Conference on Robot Learning (CoRL)},<br>
-&nbsp;&nbsp;&nbsp;&nbsp;year={2021}<br>
-}</div>
-            </div>
-            <br>
-            <div class="divider"></div>
-            <br>
-             -->
-
-
             <div class="section team">
+                <!--Add your team members here-->
                 <h1>Team</h1>
                 <p>Omited for anonymous review.</p><br>
-                <!-- <div class="people-profile">
-                    <a href="http://www.peteflorence.com/"><img src="images/people/pete.jpg"><p>Pete Florence</p></a>
-                </div>
-                <div class="people-profile">
-                    <a href="https://coreylynch.github.io/"><img src="images/people/corey.jpg"><p>Corey Lynch</p></a>
-                </div>
-                <div class="people-profile">
-                    <a href="https://andyzeng.github.io/"><img src="images/people/andy.jpg"><p>Andy Zeng</p></a>
-                </div>
-                <div class="people-profile">
-                    <a href="https://www.linkedin.com/in/oscar-ramirez-905913b9"><img src="images/people/oscar.jpg"><p>Oscar Ramirez</p></a>
-                </div>
-                <div class="people-profile">
-                    <a href="https://ayzaan.com/"><img src="images/people/ayzaan.jpg"><p>Ayzaan Wahid</p></a>
-                </div>
-                <div class="people-profile">
-                    <a href="https://www.linkedin.com/in/laura-downs-4935081"><img src="images/people/laura.jpg"><p>Laura Downs</p></a>
-                </div>
-                <div class="people-profile">
-                    <a href="https://almostsquare.com/"><img src="images/people/adrian.png"><p>Adrian Wong</p></a>
-                </div>
-                <div class="people-profile">
-                    <a href="http://johnnylee.net/"><img src="images/people/johnny.png"><p>Johnny Lee</p></a>
-                </div>
-                <div class="people-profile">
-                    <a href="https://twitter.com/imordatch"><img src="images/people/igor.jpg"><p>Igor Mordatch</p></a>
-                </div>
-                <div class="people-profile">
-                    <a href="https://jonathantompson.github.io/"><img src="images/people/jonathan_tompson.jpeg"><p>Jonathan Tompson</p></a>
-                </div>
-                 -->
                 <div style="clear: both;"></div>
             </div>
-            <!-- <div class="section teamlogo">
-                <img src="images/logo.png">
-                <p>Robotics at Google</p>
-            </div> -->
             <div style="clear: both;"></div>
             <div class="divider"></div>
             
@@ -272,6 +220,7 @@
             <div class="divider"></div>
             
             <div class="section acknowledgements">
+                <!--Add your acknowledgements here-->
                 <h1>Acknowledgements</h1>
                 <p>Omited for anonymous review.</p><br><br>
             </div>
